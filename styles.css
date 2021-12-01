@@ -115,4 +115,20 @@ body {
   background: linear-gradient(90deg, #104788 4%, #0c346d 16%, #081f4f 36%, #050e38 69%, #03071e 86%, black 100%);
 }
 
+.section2__contenue-grid {
+  padding-top: 5rem;
+}
+
+.section2__contenue-grid_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px  48px;
+}
+
+.section2__contenue-grid_grid_case {
+  border: 1px solid red;
+  height: 7rem;
+  width: 7rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
