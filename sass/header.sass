@@ -1,6 +1,8 @@
 body
     overflow-x: hidden
-    
+
+
+
 .header
     display: flex
     position: fixed
@@ -8,9 +10,9 @@ body
     right: 0
     left: 0
     height: 5rem
-    background: rgb(16,71,136)
-    background: linear-gradient(90deg, rgba(16,71,136,1) 4%, rgba(12,52,109,1) 16%, rgba(8,31,79,1) 36%, rgba(5,14,56,1) 69%, rgba(3,7,30,1) 86%, rgba(0,0,0,1) 100%)
-
+    background: rgb(75,6,87)
+    background: linear-gradient(90deg, rgba(75,6,87,1) 9%, rgba(36,3,64,1) 25%, rgba(2,0,36,1) 50%, rgba(36,3,64,1) 75%, rgba(75,6,87,1) 91%)
+    z-index: 1000
     &__long
         display: flex
         justify-content: space-between
@@ -64,39 +66,134 @@ body
                         background-color: white
                         width: 100%
                     
+
                         
-
-
-
+.scrolled
+    background: #0a0a0a 
+    opacity: .75  
+    
+.logo1
+    opacity: 1
 
 .section
     display: flex
+    justify-content: center
+    align-items: center
     height: 100vh
     width: 100vw
-    background: rgb(16,71,136)
-    background: linear-gradient(90deg, rgba(16,71,136,1) 4%, rgba(12,52,109,1) 16%, rgba(8,31,79,1) 36%, rgba(5,14,56,1) 69%, rgba(3,7,30,1) 86%, rgba(0,0,0,1) 100%)
+    background-color: pink
 
 
+    // background: rgb(75,6,87)
+    // background: linear-gradient(90deg, rgba(75,6,87,1) 9%, rgba(36,3,64,1) 25%, rgba(2,0,36,1) 50%, rgba(36,3,64,1) 75%, rgba(75,6,87,1) 91%)
+    
+    z-index: -3
+    &__content
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 10rem
+        // width: 10rem
+        &_canvas
+            display: flex
+            // justify-content: center
+            align-items: center
+
+.animation-wrapper 
+//   width: 50%
+//   padding-bottom: 50%
+
+
+.sphere-animation 
+    // display: flex
+    // justify-content: center
+    // align-items: center
+    // position: absolute
+    // top: 50%
+    // left: 50%
+    width: 200px
+    height: 200px
+    opacity: .75
+    // margin: -290px 0 0 -290px
+
+.sphere path 
+  fill: url(#sphereGradient)
+  stroke-width: 1px
+  stroke: rgba(80,80,80,.35)
+  backface-visibility: hidden
+
+@media (min-width: 500px) 
+  .sphere path 
+    stroke-width: .4px
+
+
+
+
+    
 
 .section1
     display: flex
     height: 100vh
     width: 100vw
     background-color: white
+    &__bodyy
+        display: flex
+        justify-content: center
+        align-items: center
+
+.wrapper 
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    height: 100vh
+    
+
+.el 
+    position: absolute
+    opacity: 1
+    width: 2px
+    height: 24vh
+    margin-top: -12vh
+    transform-origin: 50% 100%
+    background: white
 
 .section2
     display: flex
     height: 100vh
     width: 100vw
-    background: rgb(16,71,136)
-    background: linear-gradient(90deg, rgba(16,71,136,1) 4%, rgba(12,52,109,1) 16%, rgba(8,31,79,1) 36%, rgba(5,14,56,1) 69%, rgba(3,7,30,1) 86%, rgba(0,0,0,1) 100%)
+    background-color: grey
+    
     &__contenue-grid
         padding-top: 5rem
         &_grid
             display: grid
-            grid-template-columns: repeat(3, 1fr)
-            grid-gap: 40px  48px
+            grid-template-columns: repeat(6, 1fr)
+            grid-gap: 2rem 
             &_case
-                border: 1px solid red
-                height: 7rem
-                width: 7rem
+                background-color: #fdfdfd
+                // border: 1px solid red
+                height: 15rem
+
+                &_img
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 70%
+                    // max-height: 70%
+                    &_logo
+                        max-height: 80%
+                        max-width: 80%
+                &_titre
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 30%
+                    &_titrelogo
+                        font-weight: 600
+                        font-size: 1.5rem
+
+.case:hover
+    background-color: red
+    box-shadow: 0 0 11px rgba(33,33,33,.2)

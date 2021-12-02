@@ -24,8 +24,9 @@ body {
   right: 0;
   left: 0;
   height: 5rem;
-  background: #104788;
-  background: linear-gradient(90deg, #104788 4%, #0c346d 16%, #081f4f 36%, #050e38 69%, #03071e 86%, black 100%);
+  background: #4b0657;
+  background: linear-gradient(90deg, #4b0657 9%, #240340 25%, #020024 50%, #240340 75%, #4b0657 91%);
+  z-index: 1000;
 }
 
 .header__long {
@@ -92,12 +93,54 @@ body {
   width: 100%;
 }
 
+.scrolled {
+  background: #0a0a0a;
+  opacity: .75;
+}
+
+.logo1 {
+  opacity: 1;
+}
+
 .section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
-  background: #104788;
-  background: linear-gradient(90deg, #104788 4%, #0c346d 16%, #081f4f 36%, #050e38 69%, #03071e 86%, black 100%);
+  background-color: pink;
+  z-index: -3;
+}
+
+.section__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.section__content_canvas {
+  display: flex;
+  align-items: center;
+}
+
+.sphere-animation {
+  width: 200px;
+  height: 200px;
+  opacity: .75;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 1px;
+  stroke: rgba(80, 80, 80, 0.35);
+  backface-visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: .4px;
+  }
 }
 
 .section1 {
@@ -107,12 +150,36 @@ body {
   background-color: white;
 }
 
+.section1__bodyy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.el {
+  position: absolute;
+  opacity: 1;
+  width: 2px;
+  height: 24vh;
+  margin-top: -12vh;
+  transform-origin: 50% 100%;
+  background: white;
+}
+
 .section2 {
   display: flex;
   height: 100vh;
   width: 100vw;
-  background: #104788;
-  background: linear-gradient(90deg, #104788 4%, #0c346d 16%, #081f4f 36%, #050e38 69%, #03071e 86%, black 100%);
+  background-color: grey;
 }
 
 .section2__contenue-grid {
@@ -121,14 +188,42 @@ body {
 
 .section2__contenue-grid_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px  48px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
 }
 
 .section2__contenue-grid_grid_case {
-  border: 1px solid red;
-  height: 7rem;
-  width: 7rem;
+  background-color: #fdfdfd;
+  height: 15rem;
+}
+
+.section2__contenue-grid_grid_case_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+.section2__contenue-grid_grid_case_img_logo {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.section2__contenue-grid_grid_case_titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+
+.section2__contenue-grid_grid_case_titre_titrelogo {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.case:hover {
+  background-color: red;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 /*# sourceMappingURL=styles.css.map */
