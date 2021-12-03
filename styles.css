@@ -24,8 +24,7 @@ body {
   right: 0;
   left: 0;
   height: 5rem;
-  background: #4b0657;
-  background: linear-gradient(90deg, #4b0657 9%, #240340 25%, #020024 50%, #240340 75%, #4b0657 91%);
+  background: none;
   z-index: 1000;
 }
 
@@ -94,12 +93,7 @@ body {
 }
 
 .scrolled {
-  background: #0a0a0a;
-  opacity: .75;
-}
-
-.logo1 {
-  opacity: 1;
+  background-color: rgba(83, 5, 5, 0.85);
 }
 
 .section {
@@ -108,7 +102,9 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: pink;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1427' height='560' preserveAspectRatio='none' viewBox='0 0 1427 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1124%26quot%3b)' fill='none'%3e%3crect width='1427' height='560' x='0' y='0' fill='rgba(83%2c 5%2c 5%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c420.155C79.663%2c416.213%2c148.599%2c376.278%2c222.437%2c346.119C314.124%2c308.67%2c447.753%2c313.291%2c485.653%2c221.79C523.939%2c129.357%2c403.825%2c43.014%2c388.967%2c-55.925C374.257%2c-153.874%2c456.654%2c-265.402%2c400.26%2c-346.827C344.78%2c-426.932%2c221.459%2c-408.45%2c127.339%2c-433.678C35.836%2c-458.204%2c-51.309%2c-508.619%2c-144.73%2c-492.907C-243.219%2c-476.342%2c-335.538%2c-422.825%2c-398.437%2c-345.248C-460.408%2c-268.816%2c-475.728%2c-167.785%2c-487.543%2c-70.098C-499.133%2c25.728%2c-513.77%2c128.949%2c-465.93%2c212.783C-419.216%2c294.644%2c-323.16%2c330.535%2c-237.051%2c368.859C-161.664%2c402.412%2c-82.416%2c424.234%2c0%2c420.155' fill='%233f0404'%3e%3c/path%3e%3cpath d='M1427 1083.159C1553.952 1115.801 1696.114 1221.205 1806.378 1150.324 1916.646 1079.44 1866.805 903.338 1902.806 777.293 1932.179 674.453 1994.783 584.727 1998.454 477.837 2002.623 356.43100000000004 2004.53 220.30599999999998 1925.089 128.404 1845.635 36.486999999999966 1706.463 39.49000000000001 1589.904 5.201000000000022 1473.277-29.107999999999947 1355.347-114.60199999999998 1241.198-72.78200000000004 1127.05-30.96199999999999 1089.328 108.61000000000001 1025.402 212.014 971.631 298.992 913.021 382.801 897.104 483.812 881.047 585.71 887.786 692.983 935.174 784.609 981.469 874.123 1069.075 930.601 1155.222 982.895 1239.472 1034.037 1331.548 1058.616 1427 1083.159' fill='%23670606'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1124'%3e%3crect width='1427' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-attachment: fixed;
+  background-size: cover;
   z-index: -3;
 }
 
@@ -116,18 +112,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10rem;
+  flex-direction: columns;
 }
 
-.section__content_canvas {
+.section__content_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 10rem;
+}
+
+.section__content_title_titre {
+  color: white;
+}
+
+.section__content_title_canvas {
   display: flex;
   align-items: center;
 }
 
+.section__content_timeline {
+  color: white;
+}
+
 .sphere-animation {
-  width: 200px;
-  height: 200px;
-  opacity: .75;
+  width: 25rem;
 }
 
 .sphere path {
@@ -182,41 +192,48 @@ body {
   background-color: grey;
 }
 
-.section2__contenue-grid {
+.section2__content-section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section2__content-section2_contenue-grid {
   padding-top: 5rem;
 }
 
-.section2__contenue-grid_grid {
+.section2__content-section2_contenue-grid_grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 2rem;
 }
 
-.section2__contenue-grid_grid_case {
+.section2__content-section2_contenue-grid_grid_case {
   background-color: #fdfdfd;
   height: 15rem;
 }
 
-.section2__contenue-grid_grid_case_img {
+.section2__content-section2_contenue-grid_grid_case_img {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70%;
 }
 
-.section2__contenue-grid_grid_case_img_logo {
+.section2__content-section2_contenue-grid_grid_case_img_logo {
   max-height: 80%;
   max-width: 80%;
 }
 
-.section2__contenue-grid_grid_case_titre {
+.section2__content-section2_contenue-grid_grid_case_titre {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 30%;
 }
 
-.section2__contenue-grid_grid_case_titre_titrelogo {
+.section2__content-section2_contenue-grid_grid_case_titre_titrelogo {
   font-weight: 600;
   font-size: 1.5rem;
 }
