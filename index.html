@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio de julick mellah">
+    <meta name="julick mellah" content="jeux javascript">
+    <meta name="portfolio" content="developpeur web">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
@@ -13,227 +19,252 @@
 
     <script src="node_modules\jquery\dist\jquery.js"></script>
 
-    <title>Document</title>
+    <title>Julick Mellah</title>
 
 </head>
 
 
 <body>
-
     <header class="header">
-
         <div class="container">
-
-            <div class="header__long">
-
-                <div class="header__long_logo">
-                    <p class="header__long_logo_logo1" href="#home">Julick Mellah</p>
+            <div class="long">
+                <div class="logo">
+                    <a href="#home"><p class="logo1">Julick Mellah</p></a>
                 </div>
-
-                <nav class="header__long_buttons">
-                    <ul class="header__long_buttons_link">
+                <nav class="buttons">
+                    <ul class="link">
                         <li>
-                            <a class="header__long_buttons_link_nav-menu-a" href="#home">Accueil</a>
+                            <a class="nav-menu-a" href="#home">Accueil</a>
                         </li>
                         <li>
-                            <a class="header__long_buttons_link_nav-menu-a" href="#about">A propos</a>
+                            <a class="nav-menu-a" href="#skill">Mes compétences</a>
                         </li>
                         <li>
-                            <a class="header__long_buttons_link_nav-menu-a" href="#skill">Mes compétences</a>
+                            <a class="nav-menu-a" href="#game">Mes jeux</a>
                         </li>
                         <li>
-                            <a class="header__long_buttons_link_nav-menu-a" href="#game">Mes Jeux</a>
+                            <a class="nav-menu-a" href="#about">A propos</a>
                         </li>
                         <li>
-                            <a class="header__long_buttons_link_nav-menu-a" href="#contact">Me contacter</a>
+                            <a class="nav-menu-a" href="#contact">Me contacter</a>
                         </li>
                     </ul>
-
                 </nav>
-
             </div>
-
         </div>
-
     </header>
 
+
     <section id="home" class="section">
-
         <div class="container">
-
-            <div class="section__content">            
-                    
-                    
-                <div class="section__content_title">
-
-                    <div class="section__content_title_titre">
-                        <h1>Julick Mellah</h1>
-                        <h2>Développeur Web</h2>
+            <div class="content">
+                <div class="home-logo-title">
+                    <div class="content-title">
+                        <div class="title">
+                            <h1>Julick Mellah</h1>
+                            <h2>Développeur Web</h2>
+                            <h4 class="h4">La vie s'arrête quand on est le plus puissant.</h4>
+                        </div>
                     </div>
-
-                    <div class="section__content_title_canvas">
-                        <div class="animation-wrapper">
-                            <div class="sphere-animation">
-                            <svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
-                                <defs>
-                                <linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
-                                    <stop stop-color="#373734" offset="0%"/>
-                                    <stop stop-color="#242423" offset="50%"/>
-                                    <stop stop-color="#0D0D0C" offset="100%"/>
-                                </linearGradient>
-                                </defs>
-                                <path d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 59.663-28.726 8.542 8.543-4.319 35.255-28.727 59.662z"/>
-                                <path d="M360.72 360.354c-35.879 35.88-75.254 54.677-87.946 41.985-12.692-12.692 6.105-52.067 41.985-87.947 35.879-35.879 75.254-54.676 87.946-41.984 12.692 12.692-6.105 52.067-41.984 87.946z"/>
-                                <path d="M357.185 356.819c-44.91 44.91-94.376 68.258-110.485 52.149-16.11-16.11 7.238-65.575 52.149-110.485 44.91-44.91 94.376-68.259 110.485-52.15 16.11 16.11-7.239 65.576-52.149 110.486z"/>
-                                <path d="M350.998 350.632c-53.21 53.209-111.579 81.107-130.373 62.313-18.794-18.793 9.105-77.163 62.314-130.372 53.209-53.21 111.579-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
-                                <path d="M343.043 342.677c-59.8 59.799-125.292 91.26-146.283 70.268-20.99-20.99 10.47-86.483 70.269-146.282 59.799-59.8 125.292-91.26 146.283-70.269 20.99 20.99-10.47 86.484-70.27 146.283z"/>
-                                <path d="M334.646 334.28c-65.169 65.169-136.697 99.3-159.762 76.235-23.065-23.066 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
-                                <path d="M324.923 324.557c-69.806 69.806-146.38 106.411-171.031 81.76-24.652-24.652 11.953-101.226 81.759-171.032 69.806-69.806 146.38-106.411 171.031-81.76 24.652 24.653-11.953 101.226-81.759 171.032z"/>
-                                <path d="M312.99 312.625c-73.222 73.223-153.555 111.609-179.428 85.736-25.872-25.872 12.514-106.205 85.737-179.428s153.556-111.609 179.429-85.737c25.872 25.873-12.514 106.205-85.737 179.429z"/>
-                                <path d="M300.175 299.808c-75.909 75.909-159.11 115.778-185.837 89.052-26.726-26.727 13.143-109.929 89.051-185.837 75.908-75.908 159.11-115.778 185.837-89.051 26.726 26.726-13.143 109.928-89.051 185.836z"/>
-                                <path d="M284.707 284.34c-77.617 77.617-162.303 118.773-189.152 91.924-26.848-26.848 14.308-111.534 91.924-189.15C265.096 109.496 349.782 68.34 376.63 95.188c26.849 26.849-14.307 111.535-91.923 189.151z"/>
-                                <path d="M269.239 267.989c-78.105 78.104-163.187 119.656-190.035 92.807-26.849-26.848 14.703-111.93 92.807-190.035 78.105-78.104 163.187-119.656 190.035-92.807 26.849 26.848-14.703 111.93-92.807 190.035z"/>
-                                <path d="M252.887 252.52C175.27 330.138 90.584 371.294 63.736 344.446 36.887 317.596 78.043 232.91 155.66 155.293 233.276 77.677 317.962 36.521 344.81 63.37c26.85 26.848-14.307 111.534-91.923 189.15z"/>
-                                <path d="M236.977 236.61C161.069 312.52 77.867 352.389 51.14 325.663c-26.726-26.727 13.143-109.928 89.052-185.837 75.908-75.908 159.11-115.777 185.836-89.05 26.727 26.726-13.143 109.928-89.051 185.836z"/>
-                                <path d="M221.067 220.7C147.844 293.925 67.51 332.31 41.639 306.439c-25.873-25.873 12.513-106.206 85.736-179.429C200.6 53.786 280.931 15.4 306.804 41.272c25.872 25.873-12.514 106.206-85.737 179.429z"/>
-                                <path d="M205.157 204.79c-69.806 69.807-146.38 106.412-171.031 81.76-24.652-24.652 11.953-101.225 81.759-171.031 69.806-69.807 146.38-106.411 171.031-81.76 24.652 24.652-11.953 101.226-81.759 171.032z"/>
-                                <path d="M189.247 188.881c-65.169 65.169-136.696 99.3-159.762 76.235-23.065-23.065 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
-                                <path d="M173.337 172.971c-59.799 59.8-125.292 91.26-146.282 70.269-20.991-20.99 10.47-86.484 70.268-146.283 59.8-59.799 125.292-91.26 146.283-70.269 20.99 20.991-10.47 86.484-70.269 146.283z"/>
-                                <path d="M157.427 157.061c-53.209 53.21-111.578 81.108-130.372 62.314-18.794-18.794 9.104-77.164 62.313-130.373 53.21-53.209 111.58-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
-                                <path d="M141.517 141.151c-44.91 44.91-94.376 68.259-110.485 52.15-16.11-16.11 7.239-65.576 52.15-110.486 44.91-44.91 94.375-68.258 110.485-52.15 16.109 16.11-7.24 65.576-52.15 110.486z"/>
-                                <path d="M125.608 125.241c-35.88 35.88-75.255 54.677-87.947 41.985-12.692-12.692 6.105-52.067 41.985-87.947C115.525 43.4 154.9 24.603 167.592 37.295c12.692 12.692-6.105 52.067-41.984 87.946z"/>
-                                <path d="M109.698 109.332c-24.408 24.407-51.12 37.268-59.663 28.726-8.542-8.543 4.319-35.255 28.727-59.662 24.407-24.408 51.12-37.27 59.662-28.727 8.543 8.543-4.319 35.255-28.726 59.663z"/>
-                            </svg>
-                            </div>
+                    <div class="content-imgtitle">
+                        <div class="img-coder">
+                            <img src="images/thinking.svg" class="image-main">
                         </div>
                     </div>
                 </div>
-
-                <div class="section__content_timeline">
-
-                    <p>Ici timeline de haut en bas</p>
-
+                <div class="content-button">
+                    <a href="#contact"><button class="button-contact" >Me contacter</button></a>
                 </div>
             </div>
-            
         </div>
     </section>
 
 
 
-    <section id="about" class="section1">
 
+    <section id="skill" class="section1">
         <div class="container">
+            <div class="content-section2">
+                <div class="contenue-titre">
+                    <div class="titre-competences">
+                        <h1 class="titre-savoir-faire">savoir-faire</h1>
+                        <div class="trait"></div>
+                        <p class="sous-titre-savoir-faire">Les différents domaines de compétences maîtrisés où en cours
+                            d'acquisition.</p>
+                    </div>
+                </div>
+                <div class="contenue-grid">
+                    <div class="grid">
 
-            <div class="section__bodyy">
-
-                <div class="wrapper"></div>
-
+                        <div class="case">
+                            <div class="img">
+                                <img class="logo" src="images/sass.png">
+                            </div>
+                            <div class="titre">
+                                <p class="titrelogo">Sass</p>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="img">
+                                <img class="logo" src="images/mysql.png">
+                            </div>
+                            <div class="titre">
+                                <p class="titrelogo">MySQL</p>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="img">
+                                <img class="logo" src="images/php.png">
+                            </div>
+                            <div class="titre">
+                                <p class="titrelogo">PHP</p>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="img">
+                                <img class="logo" src="images/javascript.png">
+                            </div>
+                            <div class="titre">
+                                <p class="titrelogo">Javascript</p>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="img">
+                                <img class="logo" src="images/python.png">
+                            </div>
+                            <div class="titre">
+                                <p class="titrelogo">Python</p>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="img">
+                                <img class="logo" src="images/node.png">
+                            </div>
+                            <div class="titre">
+                                <p class="titrelogo">NodeJS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            
-
         </div>
-
-        
-
-
     </section>
 
 
 
-
-    <section id="skill" class="section2">
-
+    <section id="game" class="section2">
         <div class="container">
-
-            <div class="section2__content-section2">
-
-                <div class="section2__content-section2_contenue-titre">
-
-                    <div>
-                        <h1>LES rats</h1>
+            <div class="content-project">
+                <div class="content-box-project">
+                    <div onclick="cookieclicker()" class="project1">
+                        <p class="sous-titre-projet">Cookie clicker</p>
                     </div>
-
-                </div>
-
-
-
-                <div class="section2__content-section2_contenue-grid">
-
-                    <div class="section2__content-section2_contenue-grid_grid">
-
-                        <div class="section2__content-section2_contenue-grid_grid_case">
-                            <div class="section2__content-section2_contenue-grid_grid_case_img">
-                                <img class="section2__content-section2_contenue-grid_grid_case_img_logo" src="images/sass.png">      
-                            </div>
-                            <div class="section2__content-section2_contenue-grid_grid_case_titre">
-                                <p class="section2__content-section2_contenue-grid_grid_case_titre_titrelogo">Sass</p>
-                            </div>
-                        </div>
-                        <div class="section2__content-section2_contenue-grid_grid_case">
-                            <div class="section2__content-section2_contenue-grid_grid_case_img">
-                                <img class="section2__content-section2_contenue-grid_grid_case_img_logo" src="images/mysql.png">                           
-                            </div>
-                            <div class="section2__content-section2_contenue-grid_grid_case_titre">
-                                <p class="section2__content-section2_contenue-grid_grid_case_titre_titrelogo">MySQL</p>
-                            </div>
-                        </div>
-                        <div class="section2__content-section2_contenue-grid_grid_case">
-                            <div class="section2__content-section2_contenue-grid_grid_case_img">
-                                <img class="section2__content-section2_contenue-grid_grid_case_img_logo" src="images/php.png">
-                            </div>
-                            <div class="section2__content-section2_contenue-grid_grid_case_titre">
-                                <p class="section2__content-section2_contenue-grid_grid_case_titre_titrelogo">PHP</p>
-                            </div>
-                        </div>
-                        <div class="section2__content-section2_contenue-grid_grid_case">
-                            <div class="section2__content-section2_contenue-grid_grid_case_img">
-                                <img class="section2__content-section2_contenue-grid_grid_case_img_logo" src="images/javascript.png">                            
-                            </div>
-                            <div class="section2__content-section2_contenue-grid_grid_case_titre">
-                                <p class="section2__content-section2_contenue-grid_grid_case_titre_titrelogo">Javascript</p>
-                            </div>
-                        </div>
-                        <div class="section2__content-section2_contenue-grid_grid_case">
-                            <div class="section2__content-section2_contenue-grid_grid_case_img">
-                                <img class="section2__content-section2_contenue-grid_grid_case_img_logo" src="images/python.png">
-                            </div>
-                            <div class="section2__content-section2_contenue-grid_grid_case_titre">
-                                <p class="section2__content-section2_contenue-grid_grid_case_titre_titrelogo">Python</p>
-                            </div>
-                        </div>
-                        <div class="section2__content-section2_contenue-grid_grid_case">
-                            <div class="section2__content-section2_contenue-grid_grid_case_img">
-                                <img class="section2__content-section2_contenue-grid_grid_case_img_logo" src="images/node.png">                        
-                            </div>
-                            <div class="section2__content-section2_contenue-grid_grid_case_titre">
-                                <p class="section2__content-section2_contenue-grid_grid_case_titre_titrelogo">NodeJS</p>
-                            </div>
-                        </div>
-
-
-
+                    <div onclick="catchjarjar()" class="project2">
+                        <p class="sous-titre-projet">Catch JarJar</p>
                     </div>
-
-
-
+                    <div onclick="loto()" class="project3">
+                        <p  class="sous-titre-projet">Loto</p>
+                    </div>
                 </div>
-
+                <div class="content-project-info">
+                    <div class="text-project-info">
+                        <h1 id="h2-title" class="h2-title-project">Cookie Clicker</h1>
+                        <div class="trait-blanc"></div>
+                        <P id="p-text" class="p-text-project">Mon jeu est le cookie clicker</P>
+                    </div>
+                    <div class="image-project-info">
+                        <img class="image-project" id="img-project" src="images/cookieclicker.png">
+                    </div>
+                </div>
             </div>
-
-            
-
         </div>
-
     </section>
 
-    <section id="game" class="section3">
 
+
+
+
+    <section id="about" class="section3">
+        <div class="container">
+            <div class="content-about">
+                <div class="content-about-left">
+                    <div class="title-about">
+                        <h1 class="h1-title-about">A propos</h1>
+                    </div>
+                    <div class="img-about">
+                        <img class="image-business" src="images/business.svg">
+                    </div>
+                </div>
+                <div class="content-about-info">
+                    <div class="me-about">
+                        <img class="julick" src="images/julick.jpg">
+                    </div>
+                    <div class="text-about">
+                        <h2>Projet Professionnel</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad 
+                            deserunt totam inventore debitis! Molestiae minus dolore 
+                            perspiciatis dignissimos quidem vel excepturi magnam nisi 
+                            dicta vitae sint facere libero vero, beatae odio aliquid cum 
+                            commodi nihil in tempore illum debitis dolorum amet veniam. Atque 
+                            eius veniam mollitia ab accusamus temporibus delectus?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+
 
     <section id="contact" class="section4">
+        <div class="container">
+            <div class="content-contact">
+                <div class="content-image-contact"> 
+                    <img class="image-contact" src="images/mail.svg">
+                </div>
+                <div class="content-contact-form">
+                    <div class="grid-contact">
 
+                        <div class="case-contact">
+                            <div class="img-contact">
+                                <img class="logo-contact" src="images/icons8-mail-100.png">
+                            </div>
+                            <div class="titre-logo">
+                                <p class="titre-logo-contact">Mail</p>
+                                <p>j.mellah@icloud.com</p>
+                            </div>
+                        </div>
+                        <div class="case-contact">
+                            <div class="img-contact">
+                                <img class="logo-contact" src="images/icons8-telephone-98.png">
+                            </div>
+                            <div class="titre-logo">
+                                <p class="titre-logo-contact">Telephone</p>
+                                <p>06 03 88 01 83</p>
+                            </div>
+                        </div>
+                        <div class="case-contact">
+                            <div class="img-contact">
+                                <img class="logo-contact" src="images/icons8-linkedin-96.png">
+                            </div>
+                            <div class="titre-logo">
+                                <p class="titre-logo-contact">Linkedin</p>
+                                <a href="https://www.linkedin.com/in/julick-mellah-179aa01b6" target="_blank"><p>Julick Mellah</p></a>
+                            </div>
+                        </div>
+                        <div class="case-contact">
+                            <div class="img-contact">
+                                <img class="logo-contact" src="images/icons8-github-96.png">
+                            </div>
+                            <div class="titre-logo">
+                                <p class="titre-logo-contact">Github</p>
+                                <a href="https://github.com/Melliche" target="_blank"><p>Melliche</p></a>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 

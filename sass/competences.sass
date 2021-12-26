@@ -1,0 +1,84 @@
+@import variables
+@import general
+
+body
+    overflow-x: hidden
+    font-family: 'Roboto', sans-serif
+
+.section1
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 34rem
+    width: 100vw
+    background-color: #F9F8FF
+    @media screen and (max-width: 700px)
+        height: 50rem
+    .content-section2
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        .contenue-titre
+            .titre-competences
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                .titre-savoir-faire
+                    font-size: 3rem
+                    color: black
+                    text-transform: uppercase
+                .trait
+                    width: 3.5rem
+                    height: 0.5rem
+                    border-radius: 0.5rem
+                    background-color: rgb(108, 99, 255)
+                    margin: 1.2rem 0rem
+                .sous-titre-savoir-faire
+                    font-size: 1rem
+                    color: black
+        .contenue-grid
+            padding-top: 2rem
+            .grid
+                display: grid
+                grid-template-columns: repeat(6, 1fr)
+                grid-gap: 2rem
+                @media screen and (max-width: 700px)
+                    grid-template-columns: repeat(3, 1fr)
+                .case
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    border: 1px solid $line-color
+                    position: relative
+                    background-color: white
+                    height: 15rem
+                    width: 9rem
+                    .img
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 80%
+                        max-width: 80%
+                        height: 70%
+                        top: 0
+                        right: 0
+                        bottom: 0
+                        left: 0
+                        .logo
+                            max-height: 80%
+                            max-width: 100%
+                    .titre
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        height: 30%
+                        .titrelogo
+                            font-weight: 600
+                            font-size: 1.5rem
+
+                .case:hover
+                    box-shadow: 0 0 11px rgba(33,33,33,.2)
+                    
