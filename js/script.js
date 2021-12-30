@@ -19,6 +19,7 @@ function cookieclicker (){
   document.getElementById('h2-title').innerHTML = cookietitle;
   document.getElementById('p-text').innerHTML = cookietext;
   document.getElementById("img-project").src="images/cookieclicker.png";
+  document.getElementById("a-jeux-button").href="cookieclicker/index.html";
 }
 
 function catchjarjar (){
@@ -27,6 +28,7 @@ function catchjarjar (){
   document.getElementById('h2-title').innerHTML = catchtitle;
   document.getElementById('p-text').innerHTML = catchtext;
   document.getElementById("img-project").src="images/catch.png";
+  document.getElementById("a-jeux-button").href="catch/index.html";
 }
 
 function loto (){
@@ -35,5 +37,6 @@ function loto (){
   document.getElementById('h2-title').innerHTML = lototitle;
   document.getElementById('p-text').innerHTML = lototext;
   document.getElementById("img-project").src="images/loto.png";
+  document.getElementById("a-jeux-button").href="loto/index.html";
 }
 

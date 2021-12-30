@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catch.css">
+
+
+    <title>Catch</title>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__section"> 
+                <div class="header__section_content">
+                    <button onclick="test()" class="header__section_content_button">Lancer</button>     
+                    <p class="header__section_content_p" id="point"></p>     
+                    <button onclick="stop()" class="header__section_content_buttonred">Arrêter</button>
+                </div>
+                <div class="header__section_grid">     
+                    <div class="header__section_grid_content-case">
+                        <div id="0" onclick="cancelledtest(0)" class="header__section_grid_content-case_case">
+                        </div>
+                        <div id="1" onclick="cancelledtest(1)" class="header__section_grid_content-case_case">
+                        </div>
+                        <div id="2" onclick="cancelledtest(2)" class="header__section_grid_content-case_case">
+                        </div>
+                    </div>
+                    <div class="header__section_grid_content-case">
+                        <div id="3" onclick="cancelledtest(3)" class="header__section_grid_content-case_case">
+                        </div>
+                        <div id="4" onclick="cancelledtest(4)" class="header__section_grid_content-case_case">
+                        </div>
+                        <div id="5" onclick="cancelledtest(5)" class="header__section_grid_content-case_case">
+                        </div>
+                    </div>
+                    <div class="header__section_grid_content-case">   
+                        <div id="6" onclick="cancelledtest(6)" class="header__section_grid_content-case_case">
+                        </div>
+                        <div id="7" onclick="cancelledtest(7)" class="header__section_grid_content-case_case">
+                        </div>
+                        <div id="8" onclick="cancelledtest(8)" class="header__section_grid_content-case_case">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+<script src="js/catch.js"></script>
+</html>

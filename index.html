@@ -13,15 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
-
-    <script src="node_modules\jquery\dist\jquery.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Julick Mellah</title>
 
 </head>
+
+<!-- J'ai pris la décision de ne pas faire la convention BEM car elle ne me correspond pas, 
+elle trouble ma compréhension. -->
+
+<!-- bon courage -->
 
 
 <body>
@@ -54,6 +56,8 @@
         </div>
     </header>
 
+    
+
 
     <section id="home" class="section">
         <div class="container">
@@ -79,9 +83,6 @@
         </div>
     </section>
 
-
-
-
     <section id="skill" class="section1">
         <div class="container">
             <div class="content-section2">
@@ -95,7 +96,6 @@
                 </div>
                 <div class="contenue-grid">
                     <div class="grid">
-
                         <div class="case">
                             <div class="img">
                                 <img class="logo" src="images/sass.png">
@@ -150,8 +150,6 @@
         </div>
     </section>
 
-
-
     <section id="game" class="section2">
         <div class="container">
             <div class="content-project">
@@ -171,18 +169,15 @@
                         <h1 id="h2-title" class="h2-title-project">Cookie Clicker</h1>
                         <div class="trait-blanc"></div>
                         <P id="p-text" class="p-text-project">Mon jeu est le cookie clicker</P>
+                        <a id="a-jeux-button" href="cookieclicker/index.html" target="blanc"><button class="button-game">Jeux</button></a>
                     </div>
                     <div class="image-project-info">
-                        <img class="image-project" id="img-project" src="images/cookieclicker.png">
+                       <img class="image-project" id="img-project" src="images/cookieclicker.png">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
 
     <section id="about" class="section3">
         <div class="container">
@@ -200,8 +195,8 @@
                         <img class="julick" src="images/julick.jpg">
                     </div>
                     <div class="text-about">
-                        <h2>Projet Professionnel</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad 
+                        <h2 class="h2-about">Projet Professionnel</h2>
+                        <p class="p-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad 
                             deserunt totam inventore debitis! Molestiae minus dolore 
                             perspiciatis dignissimos quidem vel excepturi magnam nisi 
                             dicta vitae sint facere libero vero, beatae odio aliquid cum 
@@ -213,10 +208,11 @@
         </div>
     </section>
 
-
-
     <section id="contact" class="section4">
         <div class="container">
+            <div class="content-titre-contact">
+                <h1 class="h1-contact">Contact</h1>
+            </div>
             <div class="content-contact">
                 <div class="content-image-contact"> 
                     <img class="image-contact" src="images/mail.svg">
@@ -230,7 +226,7 @@
                             </div>
                             <div class="titre-logo">
                                 <p class="titre-logo-contact">Mail</p>
-                                <p>j.mellah@icloud.com</p>
+                                <a href="mailto:j.mellah@icloud.com"><p>j.mellah@icloud.com</p></a>
                             </div>
                         </div>
                         <div class="case-contact">
@@ -248,7 +244,7 @@
                             </div>
                             <div class="titre-logo">
                                 <p class="titre-logo-contact">Linkedin</p>
-                                <a href="https://www.linkedin.com/in/julick-mellah-179aa01b6" target="_blank"><p>Julick Mellah</p></a>
+                                <a href="https://www.linkedin.com/in/julick-mellah-179aa01b6" target="blank"><p>Julick Mellah</p></a>
                             </div>
                         </div>
                         <div class="case-contact">
@@ -257,7 +253,7 @@
                             </div>
                             <div class="titre-logo">
                                 <p class="titre-logo-contact">Github</p>
-                                <a href="https://github.com/Melliche" target="_blank"><p>Melliche</p></a>
+                                <a href="https://github.com/Melliche" target="blank"><p>Melliche</p></a>
                                 <p></p>
                             </div>
                         </div>
@@ -267,10 +263,8 @@
         </div>
     </section>
 
-
 </body>
 
-<script src="node_modules\animejs\lib\anime.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>

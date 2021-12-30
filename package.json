@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output styles.css styles.css",
-    "build-cleancss": "cleancss -o styles.css styles.css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/styles.css css/styles.css",
+    "build-cleancss": "cleancss -o css/styles.css css/styles.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true sass/styles.sass styles.css",
+    "build-sass": "node-sass --output-style expanded --source-map true sass/styles.sass css/styles.css",
     "deploy": "npm run build",
+    "assets": "copyfiles -f src/css/*.css dist/css",
     "start": "npm run build-sass -- --watch"
   },
   "author": "",

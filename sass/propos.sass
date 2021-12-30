@@ -7,14 +7,16 @@ body
     height: 45rem
     width: 100vw
     background-color: #F9F8FF
-    @media screen and (max-width: 700px)
-        height: 40rem
+    @media screen and (max-width: 900px)
+        height: 35rem
+    @media screen and (max-width: 550px)
+        height: 45rem
     .content-about
         display: flex
         justify-content: center
         align-items: center
         flex-direction: columns
-        padding-top: 5rem
+        padding-top: 4rem
 
         .content-about-left
             display: flex
@@ -22,7 +24,7 @@ body
             align-items: center
             flex-direction: column
             width: 50%
-            @media screen and (max-width: 700px)
+            @media screen and (max-width: 900px)
                 display: none
             .title-about
                 color: black
@@ -44,7 +46,7 @@ body
             align-items: center
             flex-direction: column
             width: 50%
-            @media screen and (max-width: 700px)
+            @media screen and (max-width: 900px)
                 width: 100%
             .me-about
                 border-radius: 50%
@@ -58,6 +60,10 @@ body
                     max-width: 100%
                     max-height: 100%
             .text-about
+                .h2-about
+                    font-size: 1.5rem
+                    margin-bottom: 1rem
+                .p-about
                 font-size: 1rem
                 padding-top: 3rem
                 width: 50%
