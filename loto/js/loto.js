@@ -33,7 +33,6 @@ function createGrille() {
     if (i > 49) {
         clearTimeout(time);
     }
-
     numero.onclick = function () {
         if (choix5.length <= 4) {
             id = this.id;
